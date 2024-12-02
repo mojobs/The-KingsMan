@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE KINGSMAN</title>
+    <link rel="stylesheet" href="{% static 'customer.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Customer Registration</h1>
+    </header>
+    <main>
+        <div>
+            <style>
+                h5 {
+                    color: red;
+                }
+            </style>
+            {% for message in messages %}
+            <h5 align="center">{{ message }}</h5>
+            {% endfor %}
+        </div>
+        <form action="" method="POST"> {% csrf_token %}
+            <section>
+                <h2>Customer Details</h2>
+                <ul>
+                    <li>
+                        <label for="customerid">Customer ID:</label>
+                        <input type="text" name="customerid" id="customerid" required placeholder="Customer ID">
+                    </li>
+                    <li>
+
+                        <label for="customername">Customer Name:</label>
+                        <input type="text" name="customername" id="customername" required>
+        
+                    </li>
+                    <li>
+                        <label for="customeraddress">Customer Address:</label>
+                        <textarea name="useraddress" id="customeraddress" cols="10" rows="5"></textarea>
+                    </li>
+                    <li>
+                        <label for="customernumber">Customer phone-number:</label>
+                        <input type="text" name="customernumber" id="customernumber" required>
+                    </li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>More details</h2> 
+                <ul>
+                    <li>
+                        <label for="customersex">Sex:</label>
+                        <input type="text" name="usersex" id="customersex" required placeholder="M/F">
+                    </li>
+                    <li>
+
+                        <label for="customerdate">Date:</label>
+                        <input type="date" name="user-date" id="customerdate" required>
+                    </li>
+                   
+                </ul>
+            </section>
+                
+            <section>
+                <h2>How should we verify your account?</h2>
+                <ul> 
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-text-message" value="text-message" required>
+                        <label for="verify-text-message">Via text message</label>
+                    </li>     
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify"id="verify-phone" value="phone-number">
+                        <label for="verify-phone">Via phone call</label>
+                    </li>  
+                    <li class="form-control-inline">
+                        <input type="radio" name="verify" id="verify-email" value="e-mail">
+                        <label for="verify-email">Via an e-mail</label>
+                    </li>  
+                </ul>
+            </section>
+            <section>
+                <h2>How should we contact you</h2>
+                <ul>
+                    <li class="form-control-inline"> 
+                        <input type="checkbox" id="contact-email" name="contact" value="email">  
+                        <label for="contact-email"> Contact me via email</label> 
+                    </li>
+                    <li class="form-control-inline"> 
+                        <input type="checkbox" id="contact-phone" name="contact" value="phone">  
+                        <label for="contact-phone"> Contact me via phone</label> 
+                    </li>
+                </ul>
+            </section>
+            <hr>
+            <section>
+                <div class="form-control-inline"> 
+                    <input type="checkbox" id="agree-terms" name="terms">  
+                    <label for="agree-terms"> Agree to terms</label> 
+                </div>
+            </section>
+            <section>
+                <button type="button"><a href="/index">Back</a></button>
+                <button type="reset">Clear</button>
+                <button type='submit'>Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
+                
+                
+          
+            
+                
+
+                
+            
+    
+            
+            
+            
+            
+          
+           
+    
+            
+            
+           
+                
+            
+    
+   

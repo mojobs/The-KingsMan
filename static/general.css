@@ -1,0 +1,45 @@
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 100px;
+    margin-top: 200px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+body {
+    background-color: rgb(236,252,253);
+    font-family: sans-serif;
+ }
+ h1 {
+     text-align: center;
+     margin: 2rem;
+ }
+ h2 {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+
+ }
+ 
+
+ 
+ button {
+     font: inherit;
+     background-color: rgb(144, 242, 244);
+     border : 1px solid rgb(34, 67, 132);
+     padding: 1.5rem;
+     border-radius: 4px;
+     cursor: pointer;
+ 
+ }
+
+ #buttons {
+     text-align: right;
+ }
+ a {
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+ }

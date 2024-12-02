@@ -1,0 +1,26 @@
+
+header {
+    font-family: 'Times New Roman', Times, serif;
+    
+    margin-top: 200px;
+    text-align: center;
+    font-weight: bold;
+
+}
+
+body {
+    background-color: rgb(236,252,253);
+    font-family: sans-serif;
+ }
+ h1 {
+     text-align: center;
+     margin: 2rem;
+     font-size: 75px;
+ }
+ h2 {
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    font-size: 35px;
+
+ }

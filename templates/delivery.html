@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE KINGSMAN</title>
+    <link rel="stylesheet" href="{% static 'customer.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Delivery Form</h1>
+    </header>
+    <main>
+        
+        <form action="" method="POST"> {% csrf_token %}
+            <section>
+                <h2>Delivery Details</h2>
+                <ul>
+                    <li>
+                        <label for="deliveryId">Delivery ID:</label>
+                        <input type="text" name="delivery-Id" id="deliveryId" required placeholder="Delivery ID">
+                    </li>
+                    <li>
+
+                        <label for="deliverydate">Delivery Date:</label>
+                        <input type="date" name="delivery-date" id="deliverydate" required >
+        
+                    </li>
+              
+                </ul>
+            </section>
+                <button type="button"><a href="/clothes">Back</a></button>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
+                
+                
+          
+            
+                
+
+                
+            
+    
+            
+            
+            
+            
+          
+           
+    
+            
+            
+           
+                
+            
+    
+   

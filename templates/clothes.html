@@ -1,0 +1,66 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THE KINGSMAN</title>
+    <link rel="stylesheet" href="{% static 'customer.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Cloth Form</h1>
+    </header>
+    <main>
+        
+        <form action="" method="POST"> {% csrf_token %}
+            <section>
+                <h2>Cloth Details</h2>
+                <ul>
+                    <li class="form-control-inline">
+                        <label for="clothtype">Cloth Type:</label>
+                        <input type="radio" name="cloth-type" value="M" id="clothtype" required>
+                        <label for="clothtype">Male</label>
+                        <input type="radio" name="cloth-type" value="F" id="clothtype2" required>
+                        <label for="clothtype">Female</label>
+                    </li>
+                    <li>
+
+                        <label for="clothnumber">Cloth Number:</label>
+                        <input type="number" name="cloth-number" id="Clothnumber" required min="1" max="100">
+        
+                    </li>
+              
+                </ul>
+            </section>
+                <button type="button"><a href="/orders">Back</a></button>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
+                
+                
+          
+            
+                
+
+                
+            
+    
+            
+            
+            
+            
+          
+           
+    
+            
+            
+           
+                
+            
+    
+   
